@@ -1,0 +1,121 @@
+{
+    "frames": {
+        "parental-questionnaire": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Pre-Study Parental Questionnaire",
+                    "properties": {
+                        "age": {
+                            "type": "integer",
+                            "title": "Age: What is your child's age?",
+                            "maximum": 9,
+                            "minimum": 6,
+                            "required": true
+                        },
+                        "gender": {
+                            "enum": [
+                                "Male",
+                                "Female",
+                                "Nonbinary"
+                            ],
+                            "type": "string",
+                            "title": "Gender: My child identifies as",
+                            "required": true
+                        },
+                        "race": {
+                            "enum": [
+                                "White",
+                                "Black or African American",
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Native Hawaiian or Other Pacific Islander"
+                            ],
+                            "type": "string",
+                            "title": "Race/Ethnicity: What is your child's race/ethnicity? Check all that apply.",
+                            "required": true
+                        },
+                        "development": {
+                            "enum": [
+                                "Developmental disorders (e.g., dyslexia)",
+                                "Psychological disabilities (e.g., autism)",
+                                "Physical impairments (e.g., hearing loss)",
+                                "None of the above"
+                            ],
+                            "type": "string",
+                            "title": "Child Development: Does your child have any of the following diagnoses? Check all that apply.",
+                            "required": true
+                        },
+                        "education": {
+                            "enum": [
+                                "Some high school, no diploma",
+                                "High school graduate, diploma or the equivalent (e.g., GED)",
+                                "Some college, no degree",
+                                "Trade/technical/vocational training",
+                                "Associate degree",
+                                "Bachelor’s degree",
+                                "Master’s degree",
+                                "Professional degree",
+                                "Doctoral degree"
+                            ],
+                            "type": "string",
+                            "title": "Parental Education: What is the highest degree or level of education you have completed? If currently enrolled, highest degree received."
+                        },
+                        "zip": {
+                            "type": "string",
+                            "title": "Zip code: What is the zip code of your permanent residence?",
+                            "required": true
+                        },
+                        "vocabulary": {
+                            "enum": [
+                                "Spud",
+                                "Mirth",
+                                "Mink",
+                                "Brink",
+                                "Boon",
+                                "Burl",
+                                "Knell",                                                                                                                                                                                                                             "Blimp",
+                                "Quill",
+                                "Stag"
+                            ],
+                            "type": "string",
+                            "title": "Vocabulary knowledge: Do you believe your child knows the meaning of any of the following words? Check all that apply. (Please do not discuss these words until after the study is complete.)",
+                            "required": false
+                        }
+                    }
+                },
+                "nextButtonText": "Start the study!"
+            }
+        },
+
+         "instructions": {
+                "kind": "exp-lookit-text",
+                "blocks": [
+                    {
+                        "text": "Thank you for joining our study! In this study, you will learn to sound out rare words using spelling-sound patterns and what these words mean. Then, you will read aloud 10 new, made-up words.",
+                        "listblocks": [
+                            {
+                                "text": "At the end of the study, your parent will have a chance to select a video privacy level. You can leave at any point by pressing F1 or ctrl-X."
+                            },
+                            {
+                                "text": "Try those now - you will see a little box pop up asking if you really want to end the study, and taking you straight to the exit survey if so."
+                            },
+                            {
+                                "text": "If you close this window/tab, you will get a generic warning (it's not possible to override that!) and if you choose to stay you will see that same box."
+                            }
+                        ]
+                    }
+                ],
+                "showPreviousButton": false
+            }
+            },
+
+        "sequence": [
+        
+                "parental-questionnaire",
+                "instructions"
+                ] 
+        }
+        
+       
